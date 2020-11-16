@@ -56,6 +56,14 @@ function App() {
           playlists: playlists
         })
       })
+      
+      const discover_weekly_playlist_id = '37i9dQZEVXcP6cKVqbpCy3'
+      spotify.getPlaylist(discover_weekly_playlist_id).then(response => {
+        dispatch({
+          type: 'SET_DISCOVER_WEEKLY',
+          discover_weekly: response
+        })
+      })
   
 
     }

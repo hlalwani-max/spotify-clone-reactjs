@@ -1,3 +1,5 @@
+import { ActionSchedule } from "material-ui/svg-icons";
+
 export const initialState = {
     user: null,
     playlist: [],
@@ -5,7 +7,8 @@ export const initialState = {
     item: null,
     // token: "BQAKE_39OQACVq86DGTEQbNa-JStWLeE4VEKs-VR6BxeY_Rzq5…Z3V_VoOmK2Gf1949FER3cU-UL5Nb23hkOnHp16pfAYsoQ4Csh",
     spotify: null,
-    playlists: null
+    playlists: null,
+    discover_weekly: null
 };
 
 const reducer = (state, action) => {
@@ -35,6 +38,11 @@ const reducer = (state, action) => {
                 ...state,
                 playlists: action.playlists
             };
+        case 'SET_DISCOVER_WEEKLY':
+            return {
+                ...state,
+                discover_weekly: action.discover_weekly
+            }
         default:
             return state;
     }

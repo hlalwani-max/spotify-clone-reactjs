@@ -15,22 +15,20 @@ function Footer() {
         <div className='footer'>
             
             <div className='footer_left'>
-                <img 
-                className='footer_albumlogo'
-                src='https://cdn4.iconfinder.com/data/icons/lyrics/154/dics-cd-music-audio-track-512.png' 
-                alt=''>
-                </img>
+                <img className='footer_albumlogo'
+                src='https://i.ytimg.com/vi/bd25pOxvbr8/hqdefault.jpg' 
+                alt='usher'/>
                 <div className='footer_songinfo'>
-                    <h4>Yeah Yeah..</h4>
+                    <h4>Yeah</h4>
                     <p>Usher</p>
                 </div>
             </div>
 
             <div className='footer_center'>
                 <ShuffleIcon className='footer_green'></ShuffleIcon>
-                <SkipPreviousIcon></SkipPreviousIcon>
-                <PlayCircleOutlineIcon className='footer_icon'></PlayCircleOutlineIcon>
-                <SkipNextIcon></SkipNextIcon>
+                <SkipPreviousIcon className='footer_icon'></SkipPreviousIcon>
+                <PlayCircleOutlineIcon font-fontSize='large' className='footer_icon'></PlayCircleOutlineIcon>
+                <SkipNextIcon className='footer_icon'></SkipNextIcon>
                 <RepeatIcon className='footer_green'></RepeatIcon>
             </div>
 
