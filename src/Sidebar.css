@@ -1,0 +1,35 @@
+.sidebar{
+    border: 1px solid black;
+    height: 100vh;
+    flex: 0.2;
+    color: white;
+    min-width: 230px;
+    height: 100vh;
+    background-color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.spotify_logo{
+    object-fit: contain;
+    height: 70px;
+    padding: 10px;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.sidebar_title{
+    margin-top: 10px auto;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 12px;
+    color: grey;
+    
+}
+
+.sidebar > hr{
+    opacity: 80%;
+    border: 1px solid grey;
+    margin: 10px auto;
+    width: 90%;
+}
